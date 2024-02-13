@@ -18,8 +18,8 @@ def div(a, b):
 
 
 # Get user input for the numbers
-num1 = float(input("Enter your first Number : "))
-num2 = float(input("Enter your second Number : "))
+num1 = float(input("Enter your 1st Number : "))
+num2 = float(input("Enter your 2nd Number : "))
 operation = input("(+, -, *, /)")
 
 # Perform the calcuations 

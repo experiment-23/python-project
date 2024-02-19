@@ -1,17 +1,5 @@
-while True:
-    x = float(input("Enter Number : "))
-
-    if x == 0:
-        print("Number is 0")
-    elif x % 2 != 0:
-        print("It's an Odd Number")
-    elif x % 2 == 0:
-        print("It's an Even Number")
-    else:
-        print("It's a negative Number")
-
-    another_input = input("Do you want to enter another number : ").lower()
-
-    if another_input != "yes":
-        break
-
+from pyscf import gto
+mol = gto.Mole()
+mol.build(
+    atom = '''O 0 0 0; H  0 1 0; H 0 0 1''',
+    basis = 'sto-3g')
